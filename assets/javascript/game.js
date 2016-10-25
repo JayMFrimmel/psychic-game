@@ -1,8 +1,9 @@
 //set up list of options for the computer to pick
-var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
+//var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+// test option list
+var letters = ['a', 'b', 'c'];
 //create an array that will hold the player's guessed letters
-var lettersGuessed = [];
+var guessedLetters = [];
 
 // this variable is assigned the random letter picked
 var letterToGuess = null;
