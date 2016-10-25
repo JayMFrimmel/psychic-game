@@ -1,12 +1,11 @@
-<!doctype html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Psychic Guess a Letter Game</title>
 	<a href=""></a>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<script src="assets/javascript/game.js"></script>
 </head>
 
@@ -21,37 +20,39 @@
 		<!-- rules for play and scoring -->
 	<div class="rules">
 		<h3>
-			Rules for Play
+			<strong>Rules for Play</strong>
 		</h3>
-		<p>You and the computer will play a "guessing" game.</p>
-		<ol>
-			<li>You will be asked to guess a letter by the computer.</li>
-			<li>You will have nine chances to guess the letter picked by the computer, and you will see which letters you have already picked and the number of guesses you have left.</li>
-			<li>As you type in letters the computer will tell you if you have guessed the correct letter in the "Player Wins" tally.</li>
-			<li>If the computer wins, the score is seen in the "Computer Wins" tally.</li>
-			<li>Have fun and good luck!</li>
-		</ol>
+		
+		<div class="list">
+			<p>You and the computer will play a "guessing" game.</p>
+			<br>
+			<ol>
+				<li>You will be asked to guess a letter by the computer.</li>
+				<li>You will have nine chances to guess the letter picked by the computer, and you will see which letters you have already picked and the number of guesses you have left.</li>
+				<li>As you type in letters the computer will tell you if you have guessed the correct letter in the "Player Wins" tally.</li>
+				<li>If the computer wins, the score is seen in the "Computer Wins" tally.</li>
+				<li>Have fun and good luck!</li>
+			</ol>
+		</div>
 	</div>
 
 		<!-- score keepers and letter tallies -->
 	<div class="game">
-		<h2>Are You a Psychic?</h2>
+		<h2>Test Your Psychic Powers!</h2>
 		<br>
-			<h3>What letter am I thinking of?</h3>
+			<h3>What letter am I, the computer, thinking of? (Type a letter.)</h3>
 				<br>
-			<h3>Letters you have guessed so far:</h3>
+			<h3>Letters you have guessed so far: <span id="lettersGuessed">0</span></h3>
 				<br>
-			<h3>Guesses left:</h3>
+			<h3>Guesses left: <span id="guessesLeft">0</span></h3>
 				<br>
-			<h3>Player Wins!:</h3>
+			<!-- win counter in HTML -->
+			<h3>Player Wins!: <span id="wins">0</span></h3>
+
 				<br>
-			<h3>Player Losses:</h3>
+			<h3>(Oh No!) Player Losses: <span id="losses">0</span></h3>
 		
 	</div>
 
-
-
-
-
-		</body>
+</body>
 </html>
