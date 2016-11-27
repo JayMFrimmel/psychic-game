@@ -19,7 +19,7 @@ var losses = 0;
 //three functions to updateGuesses, updateGuessesLeft, updateGuessesSoFar
 var updateGuessesLeft = function(){
 	//now grab the HTML element and set it equal to the guesses left (guessesLeft will be displayed in HTML)
-	document.querySelector('#guessesLeft').innerHTML = guessesLeft;
+	document.getElementById('guessesLeft').innerHTML = guessesLeft;
 };
 
 var updateLetterToGuess = function(){
@@ -29,7 +29,7 @@ var updateLetterToGuess = function(){
 
 var updateGuessesSoFar = function(){
 	//take the guesses the player has tried and display them as letters separated by commas
-	document.querySelector('#updateGuessesSoFar').innerHTML = guessedLetters.join(', ');
+	document.getElementById('guessesSoFar').innerHTML = guessedLetters.join(', ');
 };
 
 //function called when everything is reset
@@ -42,7 +42,7 @@ var reset = function(){
 	updateGuessesSoFar();
 }
 
-updateLetterToGuess(); execute on page load
+updateLetterToGuess(); //execute on page load
 updateGuessesLeft();
 
 //function to capture keyboard clicks
@@ -68,7 +68,7 @@ document.onkeyup = function(event) {
 
 			//if there is a match then the player wins and the HTML will update the score
 			wins++;
-			document.querySelector('#wins').innerHTML = wins;
+			document.getElementById('wins').innerHTML = wins;
 
 			//reset the game
 			reset();
@@ -78,7 +78,7 @@ document.onkeyup = function(event) {
 
 				//then player's loss and the loss is updated
 				losses++;
-				document.querySelector('#losses').innerHTML = losses;
+				document.getElementById('losses').innerHTML = losses;
 				//then call the reset
 				reset(); 
 			}	
