@@ -1,1 +1,1 @@
-<?php include_once("https://github.com/JayMFrimmel/psychic-game">);>
+<?php include_once("index.html");>
